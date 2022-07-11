@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>BIKE - Hybrid </title>
+  <meta charset="utf-8">
+</head>
+<link rel="stylesheet" href="style.css">
+<body>
+  <h1><a href="index.html">자전거</a></h1>
+    <input type="button" value="night" onclick="
+    document.querySelector('body').style.backgroundColor = 'black';
+    document.querySelector('body').style.color = 'white';
+     ">
+    <input type="button" value="day" onclick="
+    document.querySelector('body').style.backgroundColor = 'white';
+    document.querySelector('body').style.color = 'black';
+     ">
+     <input type="button" value="night" onclick="
+     var target = document.querySelector('body');
+       if(this.value === 'night'){
+        target.style.backgroundColor = 'black';
+        target.style.color = 'white';
+        this.value = 'day';
+      } else {
+       target.style.backgroundColor = 'white';
+        target.style.color = 'black';
+        this.value = 'night';
+      }
+      ">
+
+<div id="grid">
+  <ol>
+    <li><a href="1.html">로드</a></li>
+    <li><a href="2.html">MTB</a></li>
+    <li><a href="3.html"class="active">하이브리드</a></li>
+  </ol>
+    <div id="style">
+  <h2>하이브리드</h2>
+<img src="hybrid.jpg" style="max-width: 100%; height :auto;">
+  <p>
+    Hybrid Bicycle <br>
+
+  MTB + 로드 자전거 등 서로 다른 목적의 부품을 혼합한 자전거를 하이브리드라고 부른다. 자동차의 하이브리드를 연상하는 사람들이 많지만 의미가 다르다. 자동차의 경우 하이브리드는 내연기관 + 전기모터처럼 두 종류 이상의 구동계를 함께 탑재한 자동차를 의미한다. 그러나 자전거의 경우 복수의 구동계(예: 인력 + 전기 모터, 인력 + 내연기관)가 탑재된 자전거를 하이브리드라 부르지 않는다. 자전거의 구동계는 기본적으로 인력이며 여기에 다른 구동계를 단다면 전기 자전거, 원동기 자전거 등 해당 구동계 자전거로 여긴다.</p>
+</div>
+</div>
+
+</body>
+</html>
